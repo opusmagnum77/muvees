@@ -15,6 +15,7 @@
 		375E7D831CD9095B006CBCA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375E7D811CD9095B006CBCA5 /* LaunchScreen.storyboard */; };
 		375E7D8C1CD90C33006CBCA5 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E7D8B1CD90C33006CBCA5 /* CollectionViewController.m */; };
 		375E7D921CD9124F006CBCA5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E7D911CD9124F006CBCA5 /* TableViewController.m */; };
+		375E7D951CD923F3006CBCA5 /* MVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E7D941CD923F3006CBCA5 /* MVCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		375E7D8B1CD90C33006CBCA5 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		375E7D901CD9124F006CBCA5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		375E7D911CD9124F006CBCA5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		375E7D931CD923F3006CBCA5 /* MVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCollectionViewCell.h; sourceTree = "<group>"; };
+		375E7D941CD923F3006CBCA5 /* MVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				375E7D811CD9095B006CBCA5 /* LaunchScreen.storyboard */,
 				375E7D841CD9095B006CBCA5 /* Info.plist */,
 				375E7D731CD9095B006CBCA5 /* Supporting Files */,
+				375E7D931CD923F3006CBCA5 /* MVCollectionViewCell.h */,
+				375E7D941CD923F3006CBCA5 /* MVCollectionViewCell.m */,
 			);
 			path = muvees;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				375E7D8C1CD90C33006CBCA5 /* CollectionViewController.m in Sources */,
+				375E7D951CD923F3006CBCA5 /* MVCollectionViewCell.m in Sources */,
 				375E7D7B1CD9095B006CBCA5 /* ViewController.m in Sources */,
 				375E7D781CD9095B006CBCA5 /* AppDelegate.m in Sources */,
 				375E7D921CD9124F006CBCA5 /* TableViewController.m in Sources */,

@@ -31,29 +31,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="trF-k5-7Uw">
-                            <size key="itemSize" width="120" height="200"/>
+                            <size key="itemSize" width="150" height="250"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="50" minY="50" maxX="50" maxY="50"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cv" id="2B8-Kv-1lm">
-                                <rect key="frame" x="0.0" y="64" width="120" height="200"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cv" id="2B8-Kv-1lm" customClass="MVCollectionViewCell">
+                                <rect key="frame" x="50" y="114" width="150" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1vM-6A-QoO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="0.95049079872575259" blue="0.60892999766859579" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1vM-6A-QoO" secondAttribute="bottom" id="BJi-BD-Kdx"/>
+                                    <constraint firstItem="1vM-6A-QoO" firstAttribute="leading" secondItem="2B8-Kv-1lm" secondAttribute="leading" id="PM8-Z3-jxF"/>
+                                    <constraint firstAttribute="trailing" secondItem="1vM-6A-QoO" secondAttribute="trailing" id="bBf-kQ-LEx"/>
+                                    <constraint firstItem="1vM-6A-QoO" firstAttribute="top" secondItem="2B8-Kv-1lm" secondAttribute="top" id="rJ9-Nb-aYx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="posterImageView" destination="1vM-6A-QoO" id="RyP-3x-lty"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2d9-HH-8nA">
+                            <rect key="frame" x="0.0" y="414" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-cK-eLN">
+                                    <rect key="frame" x="277" y="10" width="47" height="30"/>
+                                    <state key="normal" title="Reload"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="OPq-cK-eLN" firstAttribute="centerX" secondItem="2d9-HH-8nA" secondAttribute="centerX" id="1vb-u3-IIS"/>
+                                <constraint firstItem="OPq-cK-eLN" firstAttribute="centerY" secondItem="2d9-HH-8nA" secondAttribute="centerY" id="xOw-50-GOp"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="kCm-V5-hec" id="Our-SP-7pa"/>
                             <outlet property="delegate" destination="kCm-V5-hec" id="6GX-uY-Prn"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="nY2-bk-1Cd"/>
+                    <connections>
+                        <outlet property="reloadButton" destination="OPq-cK-eLN" id="no7-DT-3lC"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EC-8s-VqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
