@@ -82,9 +82,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="nY2-bk-1Cd"/>
-                    <connections>
-                        <outlet property="reloadButton" destination="OPq-cK-eLN" id="no7-DT-3lC"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EC-8s-VqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

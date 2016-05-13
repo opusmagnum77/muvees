@@ -8,7 +8,7 @@
 
 #import "CollectionViewController.h"
 @interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UIButton *reloadButton;
+ 
 @end
 
 @implementation CollectionViewController
