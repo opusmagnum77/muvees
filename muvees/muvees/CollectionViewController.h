@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "APIClient.h"
+#import "MVMovie.h"
 
 @interface CollectionViewController : UICollectionViewController
 

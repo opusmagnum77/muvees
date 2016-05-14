@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MVMovie.h"
 
 @interface APIClient : NSObject
 extern NSString const * baseURL;
 
-+(void)searchString: (NSString *) string withCompletion: (void(^)(NSDictionary*))completionBlock;
++(void)searchString: (NSString *) string withCompletion: (void(^)(NSArray*))completionBlock;
 
 @end

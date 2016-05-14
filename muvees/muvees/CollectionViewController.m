@@ -21,7 +21,7 @@
     searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     searchBar.delegate = self;
     self.navigationItem.titleView = searchBar;
-    [APIClient searchString:@"hello" withCompletion:^(NSDictionary * f) {
+    [APIClient searchString:@"hello" withCompletion:^(NSArray* f) {
         NSLog(@"%@" ,f);
     }];
     
