@@ -7,6 +7,7 @@
 //
 
 #import "CollectionViewController.h"
+
 @interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
  
 @end
@@ -20,7 +21,7 @@
     searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     searchBar.delegate = self;
     self.navigationItem.titleView = searchBar;
-    
+    [APIClient searchString:@"hello" withCompletion:nil];
     
     
 }

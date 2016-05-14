@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APIClient.h"
 
 @interface CollectionViewController : UICollectionViewController
 
