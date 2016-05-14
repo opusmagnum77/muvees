@@ -11,6 +11,6 @@
 @interface APIClient : NSObject
 extern NSString const * baseURL;
 
-+(void)searchString: (NSString *) string withCompletion: (void(^)(NSArray*))completionBlock;
++(void)searchString: (NSString *) string withCompletion: (void(^)(NSDictionary*))completionBlock;
 
 @end

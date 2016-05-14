@@ -16,9 +16,9 @@
 @implementation APIClient
 NSString * baseURL = @"https://www.omdbapi.com/?";
 
-+(void)searchString: (NSString *) string withCompletion: (void(^)(NSArray*))completionBlock{
++(void)searchString: (NSString *) string withCompletion: (void(^)(NSDictionary*))completionBlock{
     
-    NSString * queryUrl = [NSString stringWithFormat:@"%@t=%@&page=1", baseURL, string];
+    NSString * queryUrl = [NSString stringWithFormat:@"%@s=%@&page=1", baseURL, string];
     
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
     [manager GET:queryUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
